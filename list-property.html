@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Your Property | Elite Heaven</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Elite Heaven</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services-properties.html">Properties</a></li>
+            <li><a href="list-property.html" class="active">List Property</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+     </nav>
+     <section class="container reveal">
+        <h2 class="section-title">Sell With Us</h2>
+        <p class="section-subtitle">Reach thousands of potential buyers by listing with Elite Heaven.</p>
+        <div style="max-width: 700px; margin: 0 auto; background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+            <form id="contactForm">
+                 <!-- Using same ID for alert script -->
+                <div style="margin-bottom: 20px;">
+                    <label style="font-weight: 600; color: #0f172a;">Full Name</label>
+                    <input type="text" placeholder="Rana Riasat Ali" required>
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <label style="font-weight: 600; color: #0f172a;">Contact Number</label>
+                    <input type="tel" placeholder="0300-0000000" required>
+                </div>
+                <div class="grid-3" style="gap: 20px; margin-bottom: 20px;">
+                    <div>
+                        <label style="font-weight: 600; color: #0f172a;">City</label>
+                        <input type="text" value="Faisalabad">
+                    </div>
+                    <div>
+                        <label style="font-weight: 600; color: #0f172a;">Area (Marla/Kanal)</label>
+                        <input type="text" placeholder="e.g. 10 Marla">
+                    </div>
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <label style="font-weight: 600; color: #0f172a;">Property Details</label>
+                    <textarea rows="4" placeholder="Tell us about your property (Location, demand, features)..."></textarea>
+                </div>
+                <button type="submit" class="btn" style="width: 100%;">Submit Listing</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Elite Heaven Estates.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

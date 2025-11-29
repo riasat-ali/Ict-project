@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties | Elite Heaven</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Elite Heaven</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services-properties.html" class="active">Properties</a></li>
+            <li><a href="list-property.html">List Property</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="container reveal">
+        <h2 class="section-title">Our Exclusive Collection</h2>
+        <p class="section-subtitle">Your journey to the perfect property starts now.</p>
+        <!-- Filters -->
+        <div style="text-align: center; margin-bottom: 40px;">
+            <button class="filter-btn active" data-filter="all" style="padding: 10px 25px; margin: 5px; border: 1px solid #d4af37; background: none; cursor: pointer; font-weight: 600; transition: 0.3s;">All</button>
+            <button class="filter-btn" data-filter="sale" style="padding: 10px 25px; margin: 5px; border: 1px solid #d4af37; background: none; cursor: pointer; font-weight: 600; transition: 0.3s;">For Sale</button>
+            <button class="filter-btn" data-filter="rent" style="padding: 10px 25px; margin: 5px; border: 1px solid #d4af37; background: none; cursor: pointer; font-weight: 600; transition: 0.3s;">For Rent</button>
+        </div>
+        <div class="grid-3">          
+            <!-- Property 1 (Sale) -->
+            <div class="card property-card" data-category="sale">
+                <div class="card-img-wrapper">
+                    <img src="images\IMG-20251122-WA0075.jpg" alt="Luxury House">
+                </div>
+                <div class="card-content">
+                    <h3>Royal Villa</h3>
+                    <p style="color: #64748b;">Susa Road, Faisalabad</p>
+                    <span class="price">PKR 2.5 Crore</span>
+                    <br>
+                    <button class="btn view-details-btn" 
+                        data-title="Royal Villa" 
+                        data-price="PKR 2.5 Crore" 
+                        data-location="Susa Road"
+                        data-area="1 Kanal"
+                        data-beds="6 Beds"
+                        data-desc="Ultra luxury villa with imported marble flooring, swimming pool, and smart home features."
+                        data-img="images\IMG-20251122-WA0075.jpg">
+                        View Details
+                    </button>
+                </div>
+            </div>
+            <!-- Property 2 (Rent) -->
+            <div class="card property-card" data-category="rent">
+                <div class="card-img-wrapper">
+                    <img src="images\IMG-20251122-WA0077.jpg" alt="Apartment">
+                </div>
+                <div class="card-content">
+                    <h3>Kohinoor Heights</h3>
+                    <p style="color: #64748b;">Kohinoor City</p>
+                    <span class="price">PKR 70,000 / Month</span>
+                    <br>
+                    <button class="btn view-details-btn" 
+                        data-title="Kohinoor Heights" 
+                        data-price="PKR 70,000 / Month" 
+                        data-location="Kohinoor City"
+                        data-area="5 Marla Apartment"
+                        data-beds="4 Beds"
+                        data-desc="Fully furnished luxury apartment in the heart of the city with backup generator."
+                        data-img="images\IMG-20251122-WA0077.jpg">
+                        View Details
+                    </button>
+                </div>
+            </div>
+            <!-- Property 3 (Sale) -->
+            <div class="card property-card" data-category="sale">
+                <div class="card-img-wrapper">
+                    <img src="images\IMG-20251122-WA0080.jpg" alt="House">
+                </div>
+                <div class="card-content">
+                    <h3>Modern House</h3>
+                    <p style="color: #64748b;">Eden Valley</p>
+                    <span class="price">PKR 3.0 Crore</span>
+                    <br>
+                    <button class="btn view-details-btn" 
+                        data-title="MOdern House" 
+                        data-price="PKR 3.0 Crore" 
+                        data-location="Eden Valley"
+                        data-area="10 Marla"
+                        data-beds="4 Beds"
+                        data-desc="Beautiful architecture house with double height lobby and servant quarter."
+                        data-img="images\IMG-20251122-WA0080.jpg">
+                        View Details
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hidden Modal Structure -->
+    <div id="propertyModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <img id="modalImg" class="modal-header-img" src="" alt="Property Image">
+            <div class="modal-body">
+                <h2 id="modalTitle">Title</h2>
+                <h3 id="modalPrice" style="color: #b48811;">Price</h3>
+                <p id="modalDesc" style="margin: 15px 0; color: #555;">Desc</p>               
+                <div style="background: #f9f9f9; padding: 15px; border-radius: 8px;">
+                    <p><strong> Location:</strong> <span id="modalLocation"></span></p>
+                    <p><strong> Area:</strong> <span id="modalArea"></span></p>
+                    <p><strong> Specs:</strong> <span id="modalBeds"></span></p>
+                </div>
+                <br>
+                <a href="contact.html" class="btn" style="width: 100%; text-align: center;">Contact Agent</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Elite Heaven Estates.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
