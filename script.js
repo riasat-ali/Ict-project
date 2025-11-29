@@ -1,7 +1,6 @@
 // script.js
 
 document.addEventListener("DOMContentLoaded", () => {
-    // 1. SCROLL ANIMATION (The "Mazay ki" part)
     // This finds all elements with class 'reveal' and animates them when they come on screen
     const reveals = document.querySelectorAll('.reveal');
     const revealOnScroll = () => {
@@ -15,7 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     };
     window.addEventListener('scroll', revealOnScroll);
-    // Trigger once on load
     revealOnScroll();
     // 2. CONTACT FORM ALERT
     const contactForm = document.getElementById("contactForm");
